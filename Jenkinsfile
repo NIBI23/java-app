@@ -4,7 +4,11 @@ pipeline{
         stage('Git checkout'){
             steps{
         
-                git branch: 'main', url: 'https://github.com/NIBI23/java-app.git'
+                gitCheckout(
+                    branch: 'main',
+                    url: 'https://github.com/NIBI23/Jenkins-shared-lib.git'
+                    
+                )
             }   
 
         }
