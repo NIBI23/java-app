@@ -1,3 +1,4 @@
+@Library('Jenkins-shared-lib') _
 pipeline{
     agent any
     stages{
